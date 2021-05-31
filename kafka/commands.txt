@@ -1,0 +1,12 @@
+to start server
+zookeeper-server-start.bat C:\Users\User\Downloads\kafka\config\zookeeper.properties
+kafka-server-start.bat C:\Users\User\Downloads\kafka\config\server.properties
+
+to create topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic tweetMessage
+
+to list all topics
+kafka-topics.bat --list --zookeeper localhost:2181
+
+to list all messages of a topic from beginning
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic tweetApp --from-beginning

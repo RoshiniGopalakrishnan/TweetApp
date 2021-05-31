@@ -13,12 +13,12 @@ export const fetchLoggedInUserDetails = async () => {
     //       data: {
     //           "usersDto": [
     //               {
-    //                   "loginId": "sainag98",
-    //                   "firstName": "Sainag",
-    //                   "lastName": "Chunduru",
-    //                   "emailId": "sainagchunduru23@gmail.com",
-    //                   "password": "Dsf",
-    //                   "contactNumber": 9098765432,
+    //                   "loginId": "rosh",
+    //                   "firstName": "roshini",
+    //                   "lastName": "gopalakrishnan",
+    //                   "emailId": "roshini@gmail.com",
+    //                   "password": "roshini",
+    //                   "contactNumber": 1234567890,
     //                   "loggedIn": null
     //               }
     //           ]
