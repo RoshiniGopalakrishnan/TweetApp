@@ -44,7 +44,7 @@ public class TweetController {
 	@PostMapping(value = "/api/v1.0/tweets/{username}/add" )
 	@CrossOrigin(origins = "http://localhost:3000")
 	public TweetResponse addTweet(@RequestBody TweetRequest request , @PathVariable("username") String userName ) {
-		 this.producer.sendMessage(request.getTweet().getTweet());
+//		 this.producer.sendMessage(request.getTweet().getTweet());
 		return tweetsService.addTweet(request, userName);	
 	}
 	
@@ -59,7 +59,7 @@ public class TweetController {
 	@CrossOrigin(origins = "http://localhost:3000")
 	public TweetResponse replyToTweet(@RequestBody TweetRequest request ) {
 		
-		 this.producer.sendMessage(request.getTweet().getReply().get(0).getReplied());
+//		 this.producer.sendMessage(request.getTweet().getReply().get(0).getReplied());
 		return tweetsService.replyToTweet(request);	
 	}
 	
@@ -73,7 +73,7 @@ public class TweetController {
 	@RequestMapping(value="/api/v1.0/tweets/update",method = RequestMethod.POST)
 	@CrossOrigin(origins = "http://localhost:3000")
 	public TweetResponse updateTweet(@RequestBody  TweetRequest request ) {
-		 this.producer.sendMessage(request.getTweet().getTweet());
+//		 this.producer.sendMessage(request.getTweet().getTweet());
 		return tweetsService.updateTweet(request);
 	}
 	

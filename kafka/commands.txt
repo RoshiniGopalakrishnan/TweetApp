@@ -1,3 +1,13 @@
+
+download kafka_2.12-2.8.0
+
+create data -> kafka- kafka-logs and zookeeper
+
+confif 	-> zookeeper.properties -> change admin.serverPort=8090 and update dataDir=C:/Users/User/Downloads/kafka/data/zookeeper
+	-> server.properties -> update log.dirs=C:/Users/User/downloads/kafka/data/kafka/kafka-logs and change broker.id=1
+
+bin -> windows
+
 to start server
 zookeeper-server-start.bat C:\Users\User\Downloads\kafka\config\zookeeper.properties
 kafka-server-start.bat C:\Users\User\Downloads\kafka\config\server.properties
@@ -10,3 +20,10 @@ kafka-topics.bat --list --zookeeper localhost:2181
 
 to list all messages of a topic from beginning
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic tweetApp --from-beginning
+
+
+
+
+
+
+
